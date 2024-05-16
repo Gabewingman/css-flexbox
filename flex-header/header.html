@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Header 2.0</title>
+</head>
+
+<style>
+
+    .two, .three{
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+    }
+
+</style>
+
+<body>
+    
+    <div class="header" style="box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; gap: 16px; border: 4px solid whitesmoke;">
+        <!-- left side of header -->
+        <div class="left" style="display: flex; padding: 10px; color: indigo;">
+            <div class="logo" style="font-size:xx-large; font-weight: 1000;"><i>LOGO</i></div>
+            <!-- links -->
+            <div class="one" style="padding: 0; padding-left: 30px; padding-top: 10px;"><a href="https://www.theodinproject.com/lessons/foundations-alignment">link-one</a></div>
+            <div class="two" style="padding: 0; padding-left: 30px; padding-top: 10px;"><a href="https://github.com/TheOdinProject/css-exercises/tree/main/flex/03-flex-header-2">link-two</a></div>
+            <div class="three" style="padding: 0; padding-left: 30px; padding-top: 10px;"><a href="https://github.com/Gabewingman/css-flexbox">link-three</a></div>
+        </div>
+
+        <div class="right" style="display: flex; justify-content: right; align-items: center">
+            <div class="notif" style="padding: 5px 20px; padding-bottom: 5px; background: indigo; color: white; border-radius: 7px;">1 new notification</div>
+
+        <div class="circle">
+            <span class="dot" style="height: 25px; width: 25px; background-color: #bbb; border-radius: 50%; display: inline-block; padding: 8px; background: indigo; margin: 10px;"></span></div>
+            
+        </div>
+
+    </div>
+
+</body>
+</html>
