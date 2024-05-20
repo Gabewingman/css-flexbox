@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex Layout 2.0</title>
 </head>
+
+    <style>
+
+        .content {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            position: absolute;
+            left: 33%;
+            top: 16%;
+        }
+
+        .one div, .two div {
+            padding: 48px;
+            border: 1px solid lightgrey;
+            border-radius: 5px;
+            margin: 8px;
+        }
+
+    </style>
+
 <body style="font-family: Arial, Helvetica, sans-serif; border: 0; margin: 0;">
 
     <div class="Holy-Grail"> 
@@ -15,16 +36,16 @@
 
         <div class="content">
 
-            <div style="display: flex; flex-wrap: nowrap; flex-direction: row; position: absolute; left: 33%; top: 16%;">
-                <div style="padding: 48px; border: 1px solid lightgrey; border-radius: 5px; margin: 8px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vitae hic quia recusandae at excepturi vero odit deleniti magni voluptas perferendis</div>
-                <div style="padding: 48px; border: 1px solid lightgrey; border-radius: 5px; margin: 8px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis molestiae explicabo cum, impedit alias minus facere modi at deleniti ipsam.</div>
-                <div style="padding: 48px; border: 1px solid lightgrey; border-radius: 5px; margin: 8px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non asperiores inventore illum ipsa aliquam, possimus eligendi animi!</div>
+            <div class="one" style="display: flex; flex-wrap: nowrap; flex-direction: row; position: absolute; left: 33%; top: 15%;">
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vitae hic quia recusandae at excepturi vero odit deleniti magni voluptas perferendis</div>
+                <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis molestiae explicabo cum, impedit alias minus facere modi at deleniti ipsam.</div>
+                <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non asperiores inventore illum ipsa aliquam, possimus eligendi animi!</div>
             </div>
 
-            <div style="display: flex; flex-wrap: nowrap; flex-direction: row; position: absolute; left: 33%; top: 55%;">
-                <div style="padding: 48px; border: 1px solid lightgrey; border-radius: 5px; margin: 8px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus quod hic, consequatur esse quidem delectus, numquam molestiae.</div>
-                <div style="padding: 48px; border: 1px solid lightgrey; border-radius: 5px; margin: 8px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, obcaecati aliquam placeat voluptatibus cum natus. Beatae, harum.</div>
-                <div style="padding: 48px; border: 1px solid lightgrey; border-radius: 5px; margin: 8px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo voluptates dolorum, numquam quaerat, non exercitationem adipisci aspernatur.</div>
+            <div class="two" style="display: flex; flex-wrap: nowrap; flex-direction: row; position: absolute; left: 33%; top: 55%;">
+                <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus quod hic, consequatur esse quidem delectus, numquam molestiae.</div>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, obcaecati aliquam placeat voluptatibus cum natus. Beatae, harum.</div>
+                <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo voluptates dolorum, numquam quaerat, non exercitationem adipisci aspernatur.</div>
                 </div>
                 
         </div>
